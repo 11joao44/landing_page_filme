@@ -1,0 +1,22 @@
+{
+  "name": "landing_page_film",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "^5.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
