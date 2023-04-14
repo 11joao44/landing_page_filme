@@ -26,13 +26,13 @@
 
     &__list {
       position: relative;
-      height: 100px;
-      width: 100px;
+      height: 300px;
+      width: 0;
       perspective: 800px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20vh;
+      padding: 18vh;
 
 
       &__item {
@@ -64,8 +64,8 @@
     }
 
     img {
-      height: 350px;
-      width: 250px;
+      height: 260px;
+      width: 180px;
       opacity: 0.8;
       box-shadow: #000000bb 4px 2px 5px 8px;
       transition: all 0.3s ease 0s;
@@ -85,17 +85,18 @@
 
 @media (max-width: 1023px) {
   .cards {
-  
+    padding: 8vw;
+
     .shows {
-      margin-top: 120px;
+      margin-top: 20px;
 
       &__list {
-        padding: 10vh;
+        padding: 11vh;
       }
       
       img {
-        width: 150px;
-        height: 250px;
+        width: 180px;
+        height: 260px;
       }
       
     }

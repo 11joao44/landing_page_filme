@@ -80,6 +80,7 @@ trailerClose.addEventListener('click', closeTrailer);
 // -- Carrousel para seção de personagens -- //
 
 var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
   grabCursor: true,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -100,7 +101,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
     },
     1600: {
-      slidesPerView: 3,
+      slidesPerView: 5,
     }
   },
 });
