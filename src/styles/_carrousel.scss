@@ -19,7 +19,7 @@
   }
 
   .swiper {
-    width: 100%;
+    width: 80%;
 
     .swiper-slide {
       display: flex;
@@ -29,8 +29,8 @@
 
     .swiper-slide video,
     .swiper-slide img {
-      width: 640px;
-      height: 480px;
+      width: 540px;
+      height: 380px;
       transition: all .3s ease-in;
 
     }
@@ -80,8 +80,10 @@
       font-size: 2em;
     }
 
-    .swiper-slide img, .swiper-slide img {
-      width: 100%;
+    .swiper-slide img,
+    .swiper-slide video {
+      width: 250px !important;
+      height: 250px !important;
     }
 
     .swiper-button-next,

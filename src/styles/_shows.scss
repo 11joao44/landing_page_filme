@@ -3,7 +3,6 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   height: 100vh;
 
 
@@ -104,12 +103,13 @@
 }
 
 @media (max-width: 767px) {
+
   .cards {
-    overflow: auto;
+    height: 100%;
+
 
     h1 {
       font-size: 2em;
-      margin: 0 20px;
 
       img {
         width: 30px;
@@ -118,6 +118,9 @@
 
     .shows {
       display: block;
+      margin: 0;
+      background-image: url(/src/images/fundo_1.jpg);
+      background-size: cover;
 
       &__list {
         height: 350px;

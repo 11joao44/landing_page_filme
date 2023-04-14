@@ -1,18 +1,17 @@
 // Evento de observação de reload do DOM
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
 
-// -- Adiciona uma borda da thumb do trailer selecionada -- //
-    const trailer = document.querySelectorAll('[data-tab-trailer]')
+  // -- Adiciona uma borda da thumb do trailer selecionada -- //
+  const trailer = document.querySelectorAll('[data-tab-trailer]')
 
-    for (let i = 0; i < trailer.length; i++) {
-        trailer[i].addEventListener('click', function(thumb) {
+  for (let i = 0; i < trailer.length; i++) {
+    trailer[i].addEventListener('click', function (thumb) {
 
-          thumnNoSelect()
-          thumb.target.classList.add('trailer__playlist__video__thumb--is-active')
-        })
-    }
-
+      thumnNoSelect()
+      thumb.target.classList.add('trailer__playlist__video__thumb--is-active')
+    })
+  }
 
 })
 
@@ -26,7 +25,7 @@ function thumnNoSelect() {
   const thumbSelect = document.querySelectorAll('[data-tab-trailer]')
 
   for (let i = 0; i < thumbSelect.length; i++) {
-      thumbSelect[i].classList.remove('trailer__playlist__video__thumb--is-active')
+    thumbSelect[i].classList.remove('trailer__playlist__video__thumb--is-active')
   }
 }
 
@@ -54,21 +53,21 @@ trailerPlaylist.forEach(video => video.addEventListener('click', showTrailer));
 
 const closeButton = document.querySelector('.trailer__close');
 
-closeButton.addEventListener('click', function() {
-document.querySelector('.trailer__video').innerHTML = '';
+closeButton.addEventListener('click', function () {
+  document.querySelector('.trailer__video').innerHTML = '';
 });
 
 const trailerClose = document.querySelector('.trailer__close');
 
 function showTrailer() {
-trailerClose.style.display = "block";
-const videoSource = this.firstElementChild.getAttribute('data-tab-trailer');
-trailerVideo.innerHTML = `<iframe class="trailer__video__play" src="https://www.youtube.com/embed/${videoSource}?controls=0&showinfo=0&rel=0&fs=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen></iframe>`;
+  trailerClose.style.display = "block";
+  const videoSource = this.firstElementChild.getAttribute('data-tab-trailer');
+  trailerVideo.innerHTML = `<iframe class="trailer__video__play" src="https://www.youtube.com/embed/${videoSource}?controls=0&showinfo=0&rel=0&fs=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen></iframe>`;
 }
 
 function closeTrailer() {
-trailerClose.style.display = "none";
-trailerVideo.innerHTML = '';
+  trailerClose.style.display = "none";
+  trailerVideo.innerHTML = '';
 }
 
 trailerPlaylist.forEach(video => video.addEventListener('click', showTrailer));
@@ -126,17 +125,18 @@ for (let i = 0; i < cards.length; i++) {
 //----------------------------------------------------------------------------------------------//
 
 // -- Efeito de scroll para seções --//
-  new fullpage('#fullpage', {
-      autoScrolling:true,
-      scrollHorizontally: true,
+new fullpage('#fullpage', {
+  autoScrolling: true,
+  scrollHorizontally: true,
 
-// -- Solução de bug para o background do hero -- //
-  onLeave: function(origin, destination, direction) {
+  // -- Solução de bug para o background do hero -- //
+  onLeave: function (origin, destination, direction) {
 
-  let video = document.querySelector('.background');
-  if (video.paused) {
+    let video = document.querySelector('.background');
+    if (video.paused) {
       video.play();
-      }},
+    }
+  },
 });
 
 //------------------------------------------------------------------------//
