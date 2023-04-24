@@ -79,8 +79,7 @@ trailerClose.addEventListener('click', closeTrailer);
 
 // -- Carrousel para seção de personagens -- //
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+let swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -94,14 +93,17 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    767: {
-      slidesPerView: 1,
-    },
     1023: {
-      slidesPerView: 3,
+      slidesPerView: 1,
+      spaceBetween: 1,
     },
     1600: {
       slidesPerView: 4,
+      spaceBetween: 1,
+    },
+    1980: {
+      slidesPerView: 6,
+      spaceBetween: 1,
     }
   },
 });

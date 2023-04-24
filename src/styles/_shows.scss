@@ -9,20 +9,14 @@
   h1 {
     font-family: 'Bebas Neue', cursive;
     color: #fd9800;
-    font-size: 3em;
+    font-size: 4rem;
     text-align: center;
-    margin-bottom: 40px;
-
-    img {
-      margin-top: 50px;
-    }
+    padding: 40px 0;
   }
 
   .shows {
     display: flex;
     justify-content: center;
-
-
 
     &__list {
       position: relative;
@@ -64,8 +58,8 @@
     }
 
     img {
-      height: 420px;
-      width: 280px;
+      height: 340px;
+      width: 260px;
       opacity: 0.8;
       box-shadow: #000000bb 4px 2px 5px 8px;
       transition: all 0.3s ease 0s;
@@ -83,18 +77,27 @@
 
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1980px) {
   .cards {
+
+    h1 {
+      font-size: 2.5rem;
+      padding: 10px 0;
+
+      img {
+        width: 25px;
+      }
+    }
 
     .shows {
 
       &__list {
-        padding: 20vh;
+        padding: 23vh;
       }
       
       img {
-        width: 220px;
-        height: 360px;
+        width: 240px;
+        height: 320px;
       }
       
     }
@@ -107,10 +110,10 @@
     padding: 8vw;
 
     .shows {
-      margin-top: 20px;
+      margin-top: 60px;
 
       &__list {
-        padding: 11vh;
+        padding: 12vh;
       }
       
       img {
@@ -126,21 +129,20 @@
 
   .cards {
     height: 100%;
+    background: none;
 
 
     h1 {
-      font-size: 2em;
+      font-size: 3rem;
 
       img {
-        width: 30px;
+        width: 25px;
       }
     }
 
     .shows {
       display: block;
       margin: 0;
-      background-image: url(/src/images/fundo_1.jpg);
-      background-size: cover;
 
       &__list {
         height: 350px;
